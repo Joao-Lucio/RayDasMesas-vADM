@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@id/agendamento"
+            android:title="Agendamento"
+            android:icon="@drawable/ic_agendamento"
+            android:menuCategory="secondary"/>
+
+        <item android:id="@id/entregue"
+            android:title="Entregue"
+            android:icon="@drawable/ic_entregue"
+            android:menuCategory="secondary"/>
+
+        <item android:id="@id/historico"
+            android:title="Histórico"
+            android:icon="@drawable/ic_historico"
+            android:menuCategory="secondary"/>
+
+        <item android:id="@id/grafico"
+            android:title="Gráfico"
+            android:icon="@drawable/ic_grafico"
+            android:menuCategory="secondary"/>
+
+        <item android:id="@id/produto"
+            android:title="Produto"
+            android:icon="@drawable/ic_produto"
+            android:menuCategory="secondary"/>
+
+        <item android:id="@id/promocao"
+            android:title="Promoção"
+            android:icon="@drawable/ic_promocao"
+            android:menuCategory="secondary"/>
+    </group>
+
+</menu>

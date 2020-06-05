@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">RayDasMesas Administrador</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="todo">TODO</string>
+    <string name="fa_a_seu_agendamento">FAÇA SEU AGENDAMENTO</string>
+    <string name="informe_data_e_hor_rio_para_entrega">Informe Data e Horário para entrega!</string>
+    <string name="data">Data</string>
+    <string name="hor_rio">Hora</string>
+    <string name="faca_seu_aluguel">Faça seu aluguel!</string>
+    <string name="jogoCompleto">Jogo Completo</string>
+    <string name="Obs_qtdJogo">Obs.: 1 jogo completo é exatamente 1 mesas com as 4 cadeiras!</string>
+    <string name="Pecas">+ Mesas ou Cadeiras?</string>
+    <string name="sim">SIM</string>
+    <string name="nao">NÃO</string>
+    <string name="qtdPecas">Quantas Peças?</string>
+    <string name="somentePecas">Somente Mesa ou Cadeira</string>
+    <string name="qtdJogos">Quantos Jogos:</string>
+    <string-array name="peca_Tipo">
+        <item>Mesa</item>
+        <item>Cadeira</item>
+    </string-array>
+    <string-array name="promocao_tipo">
+        <item>Jogo Completo</item>
+        <item>Mesa</item>
+        <item>Cadeira</item>
+    </string-array>
+    <string-array name="produto_tipo">
+        <item>Mesa</item>
+        <item>Cadeira</item>
+    </string-array>
+    <string-array name="historico_ano">
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string-array name="spinner_anoTodos">
+        <item>Todos os Anos</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string-array name="tipoEndereco">
+        <item>Personalizado</item>
+        <item>Minha Localização Atual</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_localizacao">Map</string>
+
+</resources>

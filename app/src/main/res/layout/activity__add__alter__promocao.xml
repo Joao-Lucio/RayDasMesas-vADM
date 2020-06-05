@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Add_Alter_Promocao">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/toolbar_rounder_corners"
+        android:layout_margin="8dp"
+        android:id="@+id/toolbar_main"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+    <!--  =============================  Layout da parte cima, abaixo do toolbar ========================================================= -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="10dp"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Informe Data de Inicio e Fim da Promoção"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#FFFFFF"
+                            android:text="Data Inicio"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_dataInicio"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/border">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:background="@color/colorPrimary"
+                            android:textColor="#FFFFFF"
+                            android:text="Data Fim"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:text=""
+                            android:textSize="20sp"
+                            android:id="@+id/tv_data_fim"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+    <!--  ===========================================  Layout do meio ==================================================================== -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <!-- ============================================= Nome da Promocao  ================================================================= -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Nome:"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginLeft="50dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ex.: Promoção Dia das Mães"
+                            android:inputType="textCapWords"
+                            android:backgroundTint="#424242"
+                            android:id="@+id/textInput_ed_Nome"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!-- ============================================= Descrição da Promoção ============================================================  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Descrição:"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginLeft="25dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ex.: Alugue 10 jogos e ganhe 20% de desconto"
+                            android:inputType="textCapWords"
+                            android:backgroundTint="#424242"
+                            android:id="@+id/textInput_ed_Descricao"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!-- ============================================= Desconto da Promoção =============================================================  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desconto:"
+                        android:layout_marginTop="20dp"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginLeft="28dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ex.: 20%"
+                            android:inputType="number"
+                            android:backgroundTint="#424242"
+                            android:id="@+id/textInput_ed_Desconto"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!-- ============================================= Apartir de qual quantidade a promoção é válida ====== ============================  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apartir de:"
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="20dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="25dp">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_weight="2.5">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Ex.: 10"
+                                android:inputType="number"
+                                android:backgroundTint="#424242"
+                                android:id="@+id/textInput_ed_quantidade"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/border_botao_nao"
+                            android:layout_weight="1"
+                            android:layout_marginTop="4dp">
+                            <Spinner
+                                style="@style/Widget.AppCompat.Spinner.DropDown"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:spinnerMode="dropdown"
+                                android:forceHasOverlappingRendering="false"
+                                android:dropDownWidth="match_parent"
+                                android:backgroundTint="#000000"
+                                android:id="@+id/sp_tipo"></Spinner>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- Layout dos Botoes -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/border_botao_nao"
+                        android:text="CANCELAR"
+                        android:onClick="cancelar"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#fff"
+                        android:background="@drawable/border_botao_sim"
+                        android:text="ADICIONAR"
+                        android:onClick="addPromocao"
+                        android:id="@+id/bt_Adicionar"
+                        android:layout_alignParentEnd="true"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"
+                        android:textColor="#fff"
+                        android:background="@drawable/border_botao_sim"
+                        android:text="SALVAR"
+                        android:id="@+id/bt_Salvar"
+                        android:onClick="alterPromocao"
+                        android:layout_alignParentEnd="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

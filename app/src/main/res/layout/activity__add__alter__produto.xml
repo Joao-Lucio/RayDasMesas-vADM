@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity_Add_Alter_Produto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/toolbar_rounder_corners"
+        android:layout_margin="8dp"
+        android:id="@+id/toolbar_main"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="20dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="CADASTRAR NOVO PRODUTO"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+                <!-- Layout do Tipo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:text="Tipo:"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/border_botao_nao"
+                        tools:ignore="UselessParent">
+
+                        <Spinner
+                            style="@style/Widget.AppCompat.Spinner.DropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"
+                            android:forceHasOverlappingRendering="false"
+                            android:dropDownWidth="match_parent"
+                            android:backgroundTint="#000000"
+                            android:id="@+id/sp_tipo"></Spinner>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Layout da Quantidade -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:text="Quantidade:"
+                        android:layout_marginTop="15dp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ex.: 20"
+                            android:inputType="number"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:id="@+id/ed_quantidade"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!-- Layout da Caracteristica -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15dp"
+                        android:text="Característica:"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Ex.: Três detalhes na perna"
+                            android:inputType="textCapWords"
+                            android:backgroundTint="#424242"
+                            android:id="@+id/ed_caracteristica"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <!-- Layout dos botoes -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/border_botao_nao"
+                        android:text="CANCELAR"
+                        android:onClick="fechaActivity"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#fff"
+                        android:background="@drawable/border_botao_sim"
+                        android:text="ADICIONAR"
+                        android:onClick="addProduto"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/bt_Adicionar"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#fff"
+                        android:background="@drawable/border_botao_sim"
+                        android:text="SALVAR"
+                        android:onClick="alterProduto"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/bt_Salvar"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_Historico">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_botao_nao"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:forceHasOverlappingRendering="false"
+            android:dropDownWidth="match_parent"
+            android:backgroundTint="#000000"
+            android:id="@+id/sp_Ano"></Spinner>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não há nenhum agendamento"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/tvNenhum"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_historico"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

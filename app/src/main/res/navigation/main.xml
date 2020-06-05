@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/agendamento">
+
+    <fragment
+        android:id="@+id/agendamento"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Agendamento"
+        android:label="Agendamento"
+        tools:layout="@layout/fragment__agendamento" />
+    <fragment
+        android:id="@+id/entregue"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Entregue"
+        android:label="Entregue"
+        tools:layout="@layout/fragment__entregue" />
+    <fragment
+        android:id="@+id/grafico"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Grafico"
+        android:label="Gráfico"
+        tools:layout="@layout/fragment__grafico" />
+    <fragment
+        android:id="@+id/historico"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Historico"
+        android:label="Histórico"
+        tools:layout="@layout/fragment__historico" />
+    <fragment
+        android:id="@+id/produto"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Produto"
+        android:label="Produto"
+        tools:layout="@layout/fragment__produto" />
+    <fragment
+        android:id="@+id/promocao"
+        android:name="com.example.raydasmesas_28_01_2020.Fragment_Promocao"
+        android:label="Promoção"
+        tools:layout="@layout/fragment__promocao" />
+</navigation>

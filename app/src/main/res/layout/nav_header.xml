@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@drawable/background_tela_splash"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/im_logo"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ray Das Mesas"
+        android:textSize="25sp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:id="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administrador"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"/>
+
+</RelativeLayout>

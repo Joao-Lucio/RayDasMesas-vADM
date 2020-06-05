@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/background_tela_splash">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="20-02-2020"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/item_promocao_dataInicio"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="à"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="20-02-2020"
+                    android:id="@+id/item_promocao_dataFim"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Promoção do Dia das mães!"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/item_promocao_nome"
+                    android:textColor="#FFFFFF"
+                    android:background="@color/colorPrimary"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:text="Como funciona: Alugue 10 jogos e ganhe 20% de desconto."
+                        android:id="@+id/item_promocao_descricao"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_largura"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@color/view_padrao"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_promocao_rlButoes"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Alterar"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/border_botao_sim"
+                    android:id="@+id/item_promocao_btAlterar"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Excluir"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/border_botao_sim"
+                    android:id="@+id/item_promocao_btExcluir"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_largura"
+                    android:background="@color/view_padrao"
+                    android:id="@+id/view"
+                    android:visibility="gone"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_seta_baixo"
+                    android:background="@drawable/border_botao_nao"
+                    android:id="@+id/item_promocao_ibSeta"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
